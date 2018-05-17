@@ -18,11 +18,9 @@ class App extends Component {
     return (
       <div className="App">
       <ul>
-        <ToDo />
         { this.state.todos.map( (todo, index) =>
           <ToDo key={ index } description={ todo.description } isCompleted={ todo.isCompleted } />
         )}
-        <ToDo />
       </ul>
       </div>
     );
